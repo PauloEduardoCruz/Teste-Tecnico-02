@@ -22,8 +22,8 @@ body, input, button, textarea {
 
 #main {
     overflow: hidden;
-    height: 90vh;
-    width: 90vh;
+    height: 95vh;
+    width: 95vh;
     text-align: center;
 
     border-radius: 34px;
@@ -63,6 +63,10 @@ body, input, button, textarea {
     align-items: flex-end;
 }
 
+#main .grid-dados {
+    display: flex;
+}
+
 #main button {
     outline: none;
     width: 40%;
@@ -84,7 +88,8 @@ body, input, button, textarea {
 #main button:hover {
     background: #36CF82;
 }
-  
+
+
 
 
 @media only screen and (max-width: 600px) {
