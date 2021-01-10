@@ -5,7 +5,7 @@
 }
 
 body {
-    color:#e1e1e6;
+    color:#000000;
     /* background: linear-gradient(329.54deg, #ffffff 0%, rgb(161, 209, 165) 100%); */
     background-image: linear-gradient(to right, #9ec8fc 50%, #ff889e 50%);
 
@@ -22,26 +22,62 @@ body, input, button, textarea {
 }
 
 #main {
+    color: white;
     overflow: hidden;
-    height: 95vh;
-    width: 95vh;
+    height: 75vh;
+    width: 80vw;
     text-align: center;
 
-    border-radius: 34px;
-    background: #212025;
-    border: 2px solid #ffffff;
-    box-shadow: 1px 1px 50px #000000;
+    border-radius: 20px;
+    background: #333;
+    border: 35px rgb(255, 255, 255);
+    border-style: dotted;
+
+    box-shadow: 20px 20px 75px rgba(0, 0, 0, 0.8);
+
+    
     
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+
 }
+
+#main .grid-game{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    width: 50%;
+    height: 100%;
+
+    background-color: #85a8d400;
+
+
+
+}
+
+#main .grid-tabuleiro{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #333;
+
+
+
+}
+
+
 
 #main img {
     border-radius: 20px;
 
-    max-width: 70%;
+    max-width: 100%;
     max-height: 100%;
 }
 
@@ -55,8 +91,8 @@ body, input, button, textarea {
 }
 
 #main .personagens .player1{
-        display: flex;
-        align-items: flex-end;
+    display: flex;
+    align-items: flex-end;
 }
 
 #main .personagens .player2{
@@ -64,8 +100,26 @@ body, input, button, textarea {
     align-items: flex-end;
 }
 
+#main .grid-game h3 {
+
+    width: 90%;
+    height: 100px;
+    border: 0;
+    background: #ffffff;
+    border-radius: 20px;
+    color: #676767;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 #main .grid-dados {
     display: flex;
+
+    /* font-family: 'Finger Paint', cursive; */
+    
 }
 
 #main button {
@@ -93,6 +147,21 @@ body, input, button, textarea {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
+    #main {
+        height: 90vh;
+        width: 100vw;
+        border: 3px rgb(255, 255, 255);
+        border-style: dotted;
+        flex-direction: column;
+    }
+    
+    #main .grid-game {
+        width: 95%; 
+    }
+    
+    #main .grid-tabuleiro {
+        width: 95%; 
 
+    }
 }

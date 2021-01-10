@@ -7,37 +7,40 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <script src="./javaScript/script.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
 <body>
 
     <div id="main">
 
-        <div class="personagens">
-            <div class="player1">
-                <object data="./images/son.svg" width="40" height="40" class="svg" type="image/svg+xml"></object>
-                <h4 id="pontosP1">casa: 0</h4>
+        <div class="grid-game">
+            <div class="personagens">
+                <div class="player1">
+                    <object data="./images/son.svg" width="40" height="40" class="svg" type="image/svg+xml"></object>
+                    <h4 id="pontosP1">casa: 0</h4>
+                </div>
+
+                <div class="player2">
+                    <h4 id="pontosP2">casa: 0</h4>
+                    <object data="./images/girl.svg" width="40" height="40" class="svg" type="image/svg+xml"></object>
+                </div>
             </div>
 
-            <div class="player2">
-                <h4 id="pontosP2">casa: 0</h4>
-                <object data="./images/girl.svg" width="40" height="40" class="svg" type="image/svg+xml"></object>
+            <h3 id="mensagem">{ PRESSIONE O BOTÃO }</h3>
+
+            <div class="grid-dados">
+                <h2 id="mostraDado1" >0</h2>
+            <object data="./images/random.svg" width="30" height="30" class="svg" type="image/svg+xml"></object>
+                <h2 id="mostraDado2">0</h2>
             </div>
+
+            <button type="submit" id="mybtn" onclick="conbrasEscadas.jogar(dado(), dado())">
+                Jogar
+            </button>
         </div>
 
-        <h5 id="mensagem">{ COMECE A DIVERSÃO }</h5>
-
-        <img src="./images/tabuleiro.jpg" alt="">
-
-        <div class="grid-dados">
-            <h3 id="mostraDado1" >0</h3>
-        <object data="./images/random.svg" width="30" height="30" class="svg" type="image/svg+xml"></object>
-            <h3 id="mostraDado2">0</h3>
+        <div class="grid-tabuleiro">
+            <img src="./images/tabuleiro.jpg" alt="">
         </div>
-
-
-        <button type="submit" id="mybtn" onclick="conbrasEscadas.jogar(dado(), dado())">
-            Jogar
-        </button>
-
 
     </div>
     
