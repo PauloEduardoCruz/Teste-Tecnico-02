@@ -6,12 +6,12 @@
 
 
 ## ❔ Sobre o projeto
- Este repositório foi criado para realizar o primeiro teste técnico do processo seletivo.
+ Este repositório foi criado para realizar o segundo teste técnico do processo seletivo.
 
 
 ## 📸 Screenshot
 <h1 align="center">
-  <img src="./app.png" alt="Landing" width="1000px" />
+  <img src="./images/demo.png" alt="Landing" width="1000px" />
 </h1>
 
 
@@ -19,11 +19,11 @@
 
 Acesse o link para visualizar o sistema:
 ```bash
-https://pauloeduardocruz.github.io/processo-seletivo/
+https://pauloeduardocruz.github.io/Teste-Tecnico-02/
 ```
 
 Para acessar o código baixe o arquivo zip ou clone o repositório com:
 
 ```bash
-> git clone https://github.com/PauloEduardoCruz/processo-seletivo.git
+> git clone https://github.com/PauloEduardoCruz/Teste-Tecnico-02.git
 ```

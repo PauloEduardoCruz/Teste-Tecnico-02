@@ -17,12 +17,9 @@ class CobrasEscadas {
       mensagem.innerHTML = "{ O JOGO ACABOU! }";
       return
     }
-    //console.log("Dado 1:", dado1);
-    //console.log("Dado 2:", dado2);
+
     mostraDado1.innerHTML = dado1;
     mostraDado2.innerHTML = dado2;
-
-
 
 
     // Player 1
@@ -40,11 +37,9 @@ class CobrasEscadas {
       //verificando se o jogador encontrou alguma cobra ou escada
       this.player1 = this._regras(this.player1)
 
-      //console.log("Player 1 esta na casa: " + this.player1);
       pontosP1.innerHTML = "casa: " + this.player1;
 
       //mensagem 
-      //console.log("valor de J: ", j)
       if (j == 2 || j == 7 || j == 8 || j == 15 || j == 21 || j == 28 || j == 36 || j == 51 || j == 71 || j == 78 || j == 87) {
         mensagem.innerHTML = "{ PLAYER 1 ENCONTROU UMA ESCADA PARA A CASA " + this.player1 + " }";
       } else if (j == 16 || j == 46 || j == 49 || j == 62 || j == 64 || j == 74 || j == 89 || j == 92 || j == 95 || j == 95 || j == 99) {
@@ -79,11 +74,9 @@ class CobrasEscadas {
       //verificando se o jogador encontrou alguma cobra ou escada
       this.player2 = this._regras(this.player2)
 
-      //console.log("Player 2 esta na casa: " + this.player2);
       pontosP2.innerHTML = "casa: " + this.player2;
 
       //mensagem 
-      //console.log("valor de J: ", j)
       if (j == 2 || j == 7 || j == 8 || j == 15 || j == 21 || j == 28 || j == 36 || j == 51 || j == 71 || j == 78 || j == 87) {
         mensagem.innerHTML = "{ PLAYER 2 ENCONTROU UMA ESCADA PARA A CASA " + this.player2 + " }";
       } else if (j == 16 || j == 46 || j == 49 || j == 62 || j == 64 || j == 74 || j == 89 || j == 92 || j == 95 || j == 95 || j == 99) {
@@ -107,7 +100,7 @@ class CobrasEscadas {
   _regras(casa) {
     var novaCasa = casa;
 
-    // Escadas
+    // Caso o jogador encontrar uma escada
     switch (casa) {
       case 2:
         novaCasa = 38;
@@ -145,7 +138,7 @@ class CobrasEscadas {
     }
 
 
-    // Cobras
+    // Caso o jogador encontrar uma cobra
     switch (casa) {
       case 16:
         novaCasa = 6;
